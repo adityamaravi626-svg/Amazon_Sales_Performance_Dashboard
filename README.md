@@ -1,121 +1,229 @@
-# Amazon Sales Dashboard using Power BI
+# Amazon India Sales Dashboard | Excel
 
 ## Project Overview
 
-The Amazon Sales Dashboard is a business intelligence project developed using Microsoft Power BI to analyze sales performance, profitability, product categories, customer orders, payment methods, fulfilment status, and geographic distribution.
+The **Amazon India Sales Dashboard** is an interactive business performance dashboard developed using Microsoft Excel.
 
-The primary objective is to transform raw Amazon sales data into an interactive and easy-to-understand dashboard that helps non-technical managers monitor business performance and make informed decisions.
+The main objective of this project is to provide a simple and easy-to-understand overview of sales, profit, products, orders, customer order status, payment methods, fulfillment methods, and geographic performance.
 
-## Objectives
+The dashboard is designed for business management users who want to understand sales performance and identify opportunities for improvement without requiring technical knowledge.
 
-- Analyze overall sales and profit performance.
-- Monitor total orders, units sold, average order value, and profit margin.
-- Identify top-performing product categories and products.
-- Analyze delivered, shipped, returned, and cancelled orders.
-- Evaluate sales and profit across payment methods and fulfilment methods.
-- Compare sales, profit, and order volumes across states.
-- Present business insights through interactive visualizations.
+Using Excel PivotTables, PivotCharts, KPI cards, and interactive slicers, the dashboard presents important business information in a single place.
 
-## Tools and Technologies
+## Business Objectives
 
-- Microsoft Power BI
-- Power Query for data cleaning and transformation
-- DAX (Data Analysis Expressions) for measures and calculations
-- Microsoft Excel for the source dataset
+The project addresses four major business objectives:
 
-## Dashboard Pages
+1. **Overall Sales & Profit Performance**  
+   Evaluate overall sales, profitability, order volume, and monthly performance trends.
 
-### Page 1: Overall Sales and Profit Performance
+2. **Category & Product Performance**  
+   Identify high-performing product categories and individual products based on sales, profit, and units sold.
+
+3. **Order Status & Revenue Loss**  
+   Analyze delivered, shipped, returned, and cancelled orders to understand order completion and revenue-related issues.
+
+4. **Payment, Fulfillment & Geographic Performance**  
+   Compare payment methods, fulfillment methods, and state-wise business performance.
+
+## Tools & Technologies
+
+- Microsoft Excel
+- PivotTables
+- PivotCharts
+- Excel formulas
+- Interactive slicers
+- KPI cards
+- Data visualization
+- Business analysis
+
+## Dataset Description
+
+The project uses an Amazon India sales dataset containing transaction, product, payment, fulfillment, and geographic information.
+
+The dataset includes the following columns:
+
+| Column | Description |
+|---|---|
+| order_id | Unique order identifier |
+| order_date | Date of the order |
+| category | Product category |
+| product | Product name |
+| quantity | Number of units sold |
+| unit_price_inr | Product price in INR |
+| discount_pct | Discount percentage |
+| total_sales_inr | Total sales amount in INR |
+| profit_inr | Profit amount in INR |
+| Payment_method | Payment method used |
+| fulfillment | Fulfillment method |
+| order status | Current order status |
+| ship state | State where the order was shipped |
+
+Note: The original dataset is confidential and is not included in this repository.
+
+## Dashboard Overview
+
+The dashboard consists of four pages, each designed to answer specific business questions.
+
+### 1. Overall Sales & Profit Performance
+
+**Business Question: ** How is the business performing overall?
+
+#### KPIs
+
 - Total Sales
 - Total Profit
 - Total Orders
 - Total Units Sold
 - Average Order Value
-- Profit Margin Percentage
-- Monthly Sales and Profit Trend
+- Profit Margin
 
-### Page 2: Product Performance
-- Category-wise Sales
-- Category-wise Profit
-- Category-wise Units Sold
+#### Visualizations
+
+- Monthly Sales & Profit Trend
+
+#### Key Metrics
+
+| Metric | Value |
+|---|---:|
+| Total Sales | ₹15,57,89,893.89 |
+| Total Profit | ₹3,31,67,008.49 |
+| Total Orders | 10,000 |
+| Units Sold | 24,926 |
+| Average Order Value | ₹15,578.99 |
+| Profit Margin | 21.29% |
+
+#### Business Insights
+
+- The dashboard reports total sales of approximately ₹15.58 crore.
+- Total profit is approximately ₹3.32 crore, with a displayed profit margin of 21.29%.
+- The dashboard contains 10,000 orders and 24,926 units sold.
+- The monthly sales and profit chart provides a view of performance over time.
+
+### 2. Category & Product Performance
+
+**Business Question: ** Which products and categories are driving the business?
+
+#### Visualizations
+
+- Sales by Category
+- Profit by Category
+- Units Sold by Category
 - Top 10 Products by Sales
 
-### Page 3: Order Status and Returns
+#### Business Insights
+
+- Electronics & Mobiles is the leading category in the displayed sales and profit charts.
+- Fruits and Vegetables has the highest displayed sales among the remaining categories.
+- Electronics & Mobiles contributes the largest share of units sold in the category distribution.
+- The Top 10 Products chart highlights individual products with high sales contributions.
+- Category-wise sales, profit, and units sold provide different perspectives on product performance.
+
+### 3. Order Status & Revenue Loss
+
+**Business Question: ** How many orders are successfully completed and how many are being lost?
+
+#### KPIs
+
 - Delivered Orders
 - Shipped Orders
 - Returned Orders
 - Cancelled Orders
 - Return Rate
 - Cancellation Rate
-- Category-wise Returns and Cancellations
 
-### Page 4: Payment, Fulfilment and Geographic Performance
+#### Visualizations
+
+- Order Status Distribution
+- Category-wise Returns & Cancellations
+
+#### Key Metrics
+
+| Metric | Value |
+|---|---:|
+| Delivered Orders | 8,147 |
+| Shipped Orders | 868 |
+| Returned Orders | 485 |
+| Cancelled Orders | 500 |
+| Return Rate | 4.85% |
+| Cancellation Rate | 5.00% |
+
+#### Business Insights
+
+- Delivered orders account for the largest share of the displayed order status distribution.
+- The dashboard reports a return rate of 4.85% and cancellation rate of 5%.
+- Electronics & Mobiles has the highest displayed returned order count among the categories shown.
+- Apparel & Fashion and Electronics & Mobiles show noticeable cancellation activity.
+- Category-wise returns and cancellations help identify product categories that may require further investigation.
+
+### 4. Payment, Fulfillment & Geographic Performance
+
+**Business Question:** Which payment methods, fulfillment methods, and states are generating business?
+
+#### Visualizations
+
 - Sales by Payment Method
 - Profit by Payment Method
-- Sales by Fulfilment Method
-- Profit by Fulfilment Method
+- Sales by Fulfillment Method
+- Profit by Fulfillment Method
 - State-wise Sales
 - State-wise Profit
-- State-wise Orders
+- Orders by State
 
-## Key DAX Measures
+#### Business Insights
 
-The project uses DAX measures to calculate business KPIs dynamically.
+- UPI is the leading payment method in the displayed sales distribution.
+- Amazon FBA contributes the largest share of sales among the fulfillment methods shown.
+- Amazon FBA has the highest displayed profit among the fulfillment methods.
+- Maharashtra is the leading state in the displayed orders-by-state chart.
+- State-wise sales, profit, and orders provide different measures of geographic performance.
+- The dashboard allows management to compare payment channels, fulfillment methods, and geographic markets.
 
-**Total Sales**
-```dax
-Total Sales =
-SUM(Sheet1[Total_Sales_INR])
-```
+## Interactive Dashboard Features
 
-**Total Profit**
-```dax
-Total Profit =
-SUM(Sheet1[Profit_INR])
-```
+The dashboard includes interactive slicers that allow users to filter business performance.
 
-**Total Orders**
-```dax
-Total Orders =
-DISTINCTCOUNT(Sheet1[Order_ID])
-```
+### Overall Sales & Profit Performance
 
-**Total Units Sold**
-```dax
-Total Units Sold =
-SUM(Sheet1[Quantity])
-```
+- Category
+- Order Date
 
-**Average Order Value**
-```dax
-Average Order Value =
-DIVIDE([Total Sales], [Total Orders], 0)
-```
+### Category & Product Performance
 
-**Profit Margin**
-```dax
-Profit Margin % =
-DIVIDE([Total Profit], [Total Sales], 0)
-```
+- Category
+- Product
 
-The measures are designed to respond to report filters and slicers.
+### Order Status & Revenue Loss
 
-## Interactive Features
+- Order Status
+- Category
+- Ship State
 
-- Date-based filtering
-- State and category filtering
-- Dynamic KPI cards
-- Monthly sales and profit trend analysis
-- Product ranking by sales
-- Comparative analysis across payment and fulfilment methods
+### Payment, Fulfillment & Geographic Performance
 
-## Dataset
+- Payment Method
+- Fulfillment
+- Ship State
 
-The project uses an Amazon sales dataset in Excel format. The dataset contains fields related to order IDs, order dates, product categories, products, quantities, unit prices, discounts, sales amounts, profit, payment methods, fulfilment methods, order statuses, and shipping states.
+The slicers help users explore specific categories, products, order statuses, payment channels, fulfillment methods, and geographic markets.
 
-## Business Value
+## Key Business Findings
+Based on the displayed dashboard results:
 
-This dashboard helps managers identify sales trends, understand profitability, recognize high-performing products, monitor order outcomes, compare payment and fulfilment methods, and evaluate geographic performance.
+1. **Overall Performance:** The dashboard reports ₹15.58 crore in total sales and ₹3.32 crore in total profit.
+2. **Product Performance:** Electronics & Mobiles is the leading category in the displayed sales and profit comparisons.
+3. **Order Status:** Delivered orders represent the largest portion of the displayed order status distribution.
+4. **Returns and Cancellations:** The dashboard reports a 4.85% return rate and a 5% cancellation rate.
+5. **Payment Performance:** UPI contributes the largest share of displayed sales by payment method.
+6. **Fulfillment Performance:** Amazon FBA contributes the largest share of displayed sales among fulfillment methods.
+7. **Geographic Performance:** Maharashtra leads the displayed orders-by-state comparison.
 
-## Author Aditya Maravi
+## Conclusion
+
+The Amazon India Sales Dashboard brings important business performance metrics into one interactive Excel dashboard.
+
+It helps management understand overall sales and profitability, compare product categories, evaluate order status, analyze payment and fulfillment methods, and identify geographic performance differences.
+
+The project demonstrates how Microsoft Excel can be used to transform raw sales data into meaningful business insights and support data-driven decision-making.
+
 
